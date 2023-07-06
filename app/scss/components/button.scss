@@ -1,0 +1,13 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  padding: 4px 8px;
+  white-space: nowrap;
+  border: none;
+  transition: background-color .2s ease;
+  outline-color: var(--outline);
+  outline-offset: 4px;
+  cursor: pointer;
+}
