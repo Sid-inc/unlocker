@@ -1,0 +1,120 @@
+.advantages {
+  position: relative;
+  background-image: image-set(
+      url('../../img/antique_x3.avif') type('image/avif') 3x,
+      url('../../img/antique_x2.avif') type('image/avif') 2x,
+      url('../../img/antique.avif') type('image/avif') 1x,
+      url('../../img/antique_x3.webp') type('image/webp') 3x,
+      url('../../img/antique_x2.webp') type('image/webp') 2x,
+      url('../../img/antique.webp') type('image/webp') 1x,
+      url('../../img/antique_x3.jpg') 3x,
+      url('../../img/antique_x2.jpg') 2x,
+      url('../../img/antique.jpg') 1x,
+    );
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.3);
+  }
+}
+
+
+.advantages__inner {
+  position: relative;
+  padding-top: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 40px;
+}
+
+.advantages__title {
+  font-size: 32px;
+  line-height: 36px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: var(--primary-bg);
+}
+
+.advantages__list {
+  display: grid;
+  max-width: 900px;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  list-style: none;
+}
+
+.advantages__item {
+  position: relative;
+  width: 400px;
+  justify-self: center;
+  padding-top: 32px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+  padding-left: calc(48px + 32px);
+  background-color: var(--primary-bg);
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+}
+
+.advantages__item--time {
+  &::before {
+    background-image: url("../../img/icons/time.svg");
+  }
+}
+
+.advantages__item--task {
+  &::before {
+    background-image: url("../../img/icons/fast-task.svg");
+  }
+}
+
+.advantages__item--tools {
+  &::before {
+    background-image: url("../../img/icons/tools.svg");
+  }
+}
+
+.advantages__item--fast {
+  &::before {
+    background-image: url("../../img/icons/fast.svg");
+  }
+}
+
+.advantages__item--price {
+  &::before {
+    background-image: url("../../img/icons/payments.svg");
+  }
+}
+
+.advantages__item--warranty {
+  &::before {
+    background-image: url("../../img/icons/warranty.svg");
+  }
+}
