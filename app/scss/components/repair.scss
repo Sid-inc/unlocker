@@ -1,0 +1,19 @@
+.repair {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.repair__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.repair__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8%;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
