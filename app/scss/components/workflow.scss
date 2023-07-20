@@ -52,7 +52,6 @@
 
     &::before {
       content: '3';
-      left: 200px;
     }
 
     &::after {
@@ -85,7 +84,7 @@
     position: absolute;
     font-size: 44px;
     font-weight: 600;
-    left: 186px;
+    left: 50%;
     bottom: 88px;
     color: var(--primary);
   }

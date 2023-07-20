@@ -1,6 +1,9 @@
 .main-nav {
   height: 56px;
   background-color: var(--primary);
+  position: sticky;
+  top: 66px;
+  z-index: 9;
 }
 
 .main-nav__list {
