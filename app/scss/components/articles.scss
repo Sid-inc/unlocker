@@ -1,0 +1,24 @@
+.articles {
+  padding-top: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 120px;
+}
+
+.articles__list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.articles-item__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.articles-item__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+}

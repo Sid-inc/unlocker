@@ -1,0 +1,21 @@
+.main-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--footer-bg);
+}
+
+.main-footer__inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.main-footer__item {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.main-footer__link {
+  color: var(--text-accent);
+}
