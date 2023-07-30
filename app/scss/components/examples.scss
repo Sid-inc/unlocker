@@ -29,6 +29,10 @@
     left: 0;
     background-color: rgba(0,0,0,.6);
   }
+
+  @media screen and (max-width: 992px) {
+    min-height: 420px;
+  }
 }
 
 .examples__inner {
@@ -67,5 +71,13 @@
 
   & + & {
     margin-top: 24px;
+  }
+
+  @media screen and (max-width: 992px) {
+    font-size: 18px;
+
+    & + & {
+      margin-top: 16px;
+    }
   }
 }

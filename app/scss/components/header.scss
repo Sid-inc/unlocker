@@ -126,3 +126,53 @@
   background-repeat: no-repeat;
   transition: color .2s;
 }
+
+.main-header__menu-trigger {
+  display: none;
+  position: relative;
+  width: 66px;
+  height: 66px;
+  padding: 10px 12px;
+  background-color: var(--primary-bg);
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 50%;
+    width: 40px;
+    height: 5px;
+    background-color: var(--primary);
+    border-radius: 5px;
+    transform: translate(-50%,-50%);
+    transition: transform .24s;
+  }
+
+  &::before {
+    top: 39%;
+  }
+
+  &::after {
+    top: 62%;
+  }
+
+  @media screen and (max-width: 992px) {
+    display: block;
+  }
+}
+
+.main-header__menu-trigger--opened {
+  &::before,
+  &::after {
+    top: 50%;
+  }
+  
+  &::before {
+    transform: translate(-50%,-50%) rotate(-45deg);
+  }
+
+  &::after {
+    transform: translate(-50%,-50%) rotate(45deg);
+  }
+}

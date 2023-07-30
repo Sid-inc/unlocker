@@ -220,6 +220,12 @@ template {
   font-size: 32px;
   line-height: 36px
 }
+@media screen and (max-width:992px) {
+  .section-title {
+    font-size: 24px;
+    line-height: 32px
+  }
+}
 .service-card {
   position: relative
 }
@@ -264,6 +270,11 @@ template {
   width: 100%;
   height: 3px;
   background-color: var(--primary)
+}
+@media screen and (max-width:1200px) {
+  .service-card__desc {
+    font-size: 14px
+  }
 }
 .service-card__sub-desc {
   font-size: 20px;
@@ -391,6 +402,54 @@ template {
   -webkit-transition: color .2s;
   transition: color .2s
 }
+.main-header__menu-trigger {
+  display: none;
+  position: relative;
+  width: 66px;
+  height: 66px;
+  padding: 10px 12px;
+  background-color: var(--primary-bg)
+}
+.main-header__menu-trigger::after,
+.main-header__menu-trigger::before {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 50%;
+  width: 40px;
+  height: 5px;
+  background-color: var(--primary);
+  border-radius: 5px;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transition: -webkit-transform .24s;
+  transition: -webkit-transform .24s;
+  transition: transform .24s;
+  transition: transform .24s,-webkit-transform .24s
+}
+.main-header__menu-trigger::before {
+  top: 39%
+}
+.main-header__menu-trigger::after {
+  top: 62%
+}
+@media screen and (max-width:992px) {
+  .main-header__menu-trigger {
+    display: block
+  }
+}
+.main-header__menu-trigger--opened::after,
+.main-header__menu-trigger--opened::before {
+  top: 50%
+}
+.main-header__menu-trigger--opened::before {
+  -webkit-transform: translate(-50%,-50%) rotate(-45deg);
+  transform: translate(-50%,-50%) rotate(-45deg)
+}
+.main-header__menu-trigger--opened::after {
+  -webkit-transform: translate(-50%,-50%) rotate(45deg);
+  transform: translate(-50%,-50%) rotate(45deg)
+}
 .main {
   height: 390px
 }
@@ -401,17 +460,33 @@ template {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  gap: 16px;
   height: 100%;
   padding-left: 60px;
   padding-top: 40px;
   padding-right: 60px;
   padding-bottom: 100px
 }
+@media screen and (max-width:992px) {
+  .main__inner {
+    padding-bottom: 60px
+  }
+}
 .main__left {
   width: 60%
 }
+@media screen and (max-width:992px) {
+  .main__left {
+    width: 50%
+  }
+}
 .main__right {
   width: 40%
+}
+@media screen and (max-width:992px) {
+  .main__right {
+    width: 50%
+  }
 }
 .main__title {
   font-size: 42px;
@@ -419,6 +494,18 @@ template {
   line-height: 56px;
   margin-top: 0;
   margin-bottom: 0
+}
+@media screen and (max-width:1200px) {
+  .main__title {
+    font-size: 36px;
+    line-height: 42px
+  }
+}
+@media screen and (max-width:992px) {
+  .main__title {
+    font-size: 32px;
+    line-height: 36px
+  }
 }
 .call-link {
   display: block;
@@ -437,10 +524,35 @@ template {
 .call-link:hover {
   text-shadow: 3px 4px 20px rgba(0,0,0,.3)
 }
+@media screen and (max-width:1200px) {
+  .call-link {
+    font-size: 24px
+  }
+}
+@media screen and (max-width:992px) {
+  .call-link {
+    padding: 24px
+  }
+}
 .call-link__number {
   font-size: 50px;
   line-height: 60px;
   font-weight: 700
+}
+@media screen and (max-width:1320px) {
+  .call-link__number {
+    font-size: 36px
+  }
+}
+@media screen and (max-width:1200px) {
+  .call-link__number {
+    font-size: 32px
+  }
+}
+@media screen and (max-width:1200px) {
+  .call-link__number {
+    font-size: 28px
+  }
 }
 .main__callback {
   font-size: 16px;
@@ -457,6 +569,11 @@ template {
   position: sticky;
   top: 66px;
   z-index: 9
+}
+@media screen and (max-width:992px) {
+  .main-nav {
+    display: none
+  }
 }
 .main-nav__list {
   display: -webkit-box;
@@ -490,12 +607,19 @@ template {
   height: 100%;
   padding: 20px;
   text-transform: uppercase;
+  white-space: nowrap;
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
   color: var(--text-accent)
 }
 .main-nav__link:hover {
   background-color: var(--primary-hover)
+}
+@media screen and (max-width:1200px) {
+  .main-nav__link {
+    font-size: 14px;
+    padding: 14px
+  }
 }
 .work-types {
   padding-top: 80px;
@@ -512,6 +636,13 @@ template {
   padding-right: 60px;
   margin-top: 0;
   margin-bottom: 0
+}
+@media screen and (max-width:992px) {
+  .work-types__list {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 8%
+  }
 }
 .advantages {
   position: relative;
@@ -559,13 +690,14 @@ template {
   list-style: none
 }
 .advantages__item {
+  --item-padding: 32px;
   position: relative;
   width: 400px;
   -ms-grid-column-align: center;
   justify-self: center;
-  padding-top: 32px;
-  padding-right: 32px;
-  padding-bottom: 32px;
+  padding-top: var(--item-padding);
+  padding-right: var(--item-padding);
+  padding-bottom: var(--item-padding);
   padding-left: calc(48px + 32px);
   background-color: var(--primary-bg)
 }
@@ -582,6 +714,12 @@ template {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center
+}
+@media screen and (max-width:992px) {
+  .advantages__item {
+    width: 280px;
+    --item-padding: 16px
+  }
 }
 .advantages__item--time::before {
   background-image: url(../../img/icons/time.svg)
@@ -606,6 +744,11 @@ template {
   padding-top: 40px;
   padding-left: 60px;
   padding-right: 60px
+}
+@media screen and (max-width:992px) {
+  .workflow__inner {
+    height: 560px
+  }
 }
 .workflow__title {
   margin-top: 0;
@@ -690,6 +833,32 @@ template {
   bottom: 88px;
   color: var(--primary)
 }
+@media screen and (max-width:1200px) {
+  .step-list__item {
+    font-size: 24px;
+    min-height: 320px
+  }
+  .step-list__item::before {
+    left: 46%
+  }
+}
+@media screen and (max-width:992px) {
+  .step-list__item {
+    font-size: 18px;
+    min-height: 240px;
+    padding: 24px
+  }
+  .step-list__item::before {
+    font-size: 36px;
+    bottom: 52px
+  }
+  .step-list__item::after {
+    height: 240px
+  }
+  .step-list__item:last-child::after {
+    bottom: 28px
+  }
+}
 .repair {
   padding-top: 40px;
   padding-left: 60px;
@@ -710,6 +879,13 @@ template {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0
+}
+@media screen and (max-width:992px) {
+  .repair__list {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px
+  }
 }
 .examples {
   position: relative;
@@ -732,6 +908,11 @@ template {
   bottom: 0;
   left: 0;
   background-color: rgba(0,0,0,.6)
+}
+@media screen and (max-width:992px) {
+  .examples {
+    min-height: 420px
+  }
 }
 .examples__inner {
   position: relative;
@@ -776,6 +957,14 @@ template {
 .examples__item + .examples__item {
   margin-top: 24px
 }
+@media screen and (max-width:992px) {
+  .examples__item {
+    font-size: 18px
+  }
+  .examples__item + .examples__item {
+    margin-top: 16px
+  }
+}
 .articles {
   padding-top: 40px;
   padding-left: 60px;
@@ -796,6 +985,11 @@ template {
   font-size: 16px;
   font-weight: 400;
   line-height: 40px
+}
+@media screen and (max-width:992px) {
+  .articles-item__text {
+    line-height: 32px
+  }
 }
 .feedback {
   padding-top: 40px;
@@ -818,9 +1012,25 @@ template {
   margin-top: 0;
   margin-bottom: 0
 }
+@media screen and (max-width:1200px) {
+  .feedback__list {
+    gap: 40px
+  }
+}
+@media screen and (max-width:992px) {
+  .feedback__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr
+  }
+}
 .feedback-item {
   padding: 40px;
   background-color: var(--feedback-bg)
+}
+@media screen and (max-width:1200px) {
+  .feedback-item {
+    padding: 24px
+  }
 }
 .feedback-item__title {
   position: relative;
@@ -854,7 +1064,7 @@ template {
 .feedback-item__text {
   font-size: 16px;
   font-weight: 400;
-  line-height: 32px
+  line-height: 24px
 }
 .main-footer {
   padding-top: 40px;

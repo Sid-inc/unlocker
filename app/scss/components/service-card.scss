@@ -46,6 +46,10 @@
     height: 3px;
     background-color: var(--primary);
   }
+
+  @media screen and (max-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .service-card__sub-desc {

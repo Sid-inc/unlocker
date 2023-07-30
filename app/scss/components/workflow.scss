@@ -3,6 +3,10 @@
   padding-top: 40px;
   padding-left: 60px;
   padding-right: 60px;
+
+  @media screen and (max-width: 992px) {
+    height: 560px;
+  }
 }
 
 .workflow__title {
@@ -87,5 +91,35 @@
     left: 50%;
     bottom: 88px;
     color: var(--primary);
+  }
+
+  @media screen and (max-width: 1200px) {
+    font-size: 24px;
+    min-height: 320px;
+
+    &::before {
+      left: 46%;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    font-size: 18px;
+    min-height: 240px;
+    padding: 24px;
+
+    &::before {
+      font-size: 36px;
+      bottom: 52px;
+    }
+
+    &::after {
+      height: 240px;
+    }
+
+    &:last-child {
+      &::after {
+        bottom: 28px;
+      }  
+    }
   }
 }

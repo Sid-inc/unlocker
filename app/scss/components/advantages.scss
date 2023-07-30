@@ -57,12 +57,13 @@
 }
 
 .advantages__item {
+  --item-padding: 32px;
   position: relative;
   width: 400px;
   justify-self: center;
-  padding-top: 32px;
-  padding-right: 32px;
-  padding-bottom: 32px;
+  padding-top: var(--item-padding);
+  padding-right: var(--item-padding);
+  padding-bottom: var(--item-padding);
   padding-left: calc(48px + 32px);
   background-color: var(--primary-bg);
 
@@ -78,6 +79,11 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
+  }
+
+  @media screen and (max-width: 992px) {
+    width: 280px;
+    --item-padding: 16px;
   }
 }
 
