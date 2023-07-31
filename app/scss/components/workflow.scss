@@ -7,6 +7,15 @@
   @media screen and (max-width: 992px) {
     height: 560px;
   }
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 }
 
 .workflow__title {
@@ -24,6 +33,15 @@
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  @media screen and (max-width: 576px) {
+    gap: 28px;
+  }
 }
 
 .step-list__link {
@@ -120,6 +138,54 @@
       &::after {
         bottom: 28px;
       }  
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    min-height: auto;
+    padding-right: 64px;
+
+    &::after {
+      height: 100%;
+      width: 60px;
+      left: auto;
+      right: 0;
+      bottom: auto;
+      top: 50%;
+      transform: translateY(-50%) rotate(90deg) scale(1.5);
+    }
+
+    &::before {
+      font-size: 20px;
+      bottom: auto;
+      top: 50%;
+      left: auto;
+      right: 25px;
+      transform: translateY(-50%);
+    }
+
+    &:first-child {
+      transform: none;
+    }
+
+    &:last-child {
+      transform: none;
+
+      &::after {
+        height: 32px;
+        right: 11px;
+        left: auto;
+        width: 40px;
+        border-width: 1px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    font-size: 16px;
+    
+    &::after {
+      height: 40px;
     }
   }
 }

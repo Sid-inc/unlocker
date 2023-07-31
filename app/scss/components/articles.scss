@@ -2,7 +2,13 @@
   padding-top: 40px;
   padding-left: 60px;
   padding-right: 60px;
-  margin-bottom: 120px;
+  margin-bottom: 108px;
+
+  @media screen and (max-width: 576px) {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 80px;
+  }
 }
 
 .articles__list {
@@ -24,5 +30,10 @@
 
   @media screen and (max-width: 992px) {
     line-height: 32px;
+  }
+
+  @media screen and (max-width: 576px) {
+    font-size: 14px;
+    line-height: 24px;
   }
 }

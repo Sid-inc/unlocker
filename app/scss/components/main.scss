@@ -1,5 +1,9 @@
 .main {
   height: 390px;
+
+  @media screen and (max-width: 768px) {
+    height: 400px;
+  }
 }
 
 .main__inner {
@@ -15,6 +19,16 @@
   @media screen and (max-width: 992px) {
     padding-bottom: 60px;
   }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 }
 
 .main__left {
@@ -23,12 +37,25 @@
   @media screen and (max-width: 992px) {
     width: 50%;
   }
+
+  @media screen and (max-width: 768px) {
+    width: auto;
+  }
 }
 
 .main__right {
   width: 40%;
+
   @media screen and (max-width: 992px) {
     width: 50%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: auto;
+  }
+
+  @media screen and (max-width: 576px) {
+    width: 100%;
   }
 }
 
@@ -47,6 +74,14 @@
   @media screen and (max-width: 992px) {
     font-size: 32px;
     line-height: 36px;
+  }
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 396px) {
+    font-size: 28px;
   }
 }
 
@@ -74,6 +109,15 @@
   @media screen and (max-width: 992px) {
     padding: 24px;
   }
+
+  @media screen and (max-width: 576px) {
+    width: 100%;
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 396px) {
+    font-size: 20px;
+  }
 }
 
 .call-link__number {
@@ -90,6 +134,14 @@
   }
 
   @media screen and (max-width: 1200px) {
+    font-size: 28px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 32px;
+  }
+
+  @media screen and (max-width: 396px) {
     font-size: 28px;
   }
 }

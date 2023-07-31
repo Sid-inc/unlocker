@@ -35,6 +35,11 @@
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 40px;
+
+  @media screen and (max-width: 576px) {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 }
 
 .advantages__title {
@@ -54,6 +59,13 @@
   margin-right: auto;
   padding-left: 0;
   list-style: none;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  
 }
 
 .advantages__item {
@@ -84,6 +96,18 @@
   @media screen and (max-width: 992px) {
     width: 280px;
     --item-padding: 16px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding-left: calc(20px + 32px);
+
+    &::before {
+      left: 8px;
+    }
   }
 }
 
