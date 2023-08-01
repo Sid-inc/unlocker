@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml"> 
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="yandex-tableau-widget" href="/tableau.json">
+  <link rel="stylesheet" href="css/app.min.css" type="text/css">
+  <title>Site</title>
+</head>
+<body>
+
+  <header class="main-header">
+    <span class="main-header__background-line"></span>
+    <div class="main-header__inner container">
+      <h1 class="main-header__title"><a class="main-header__link link" href="/">Вскрытие<br>замков</a></h1>
+      <a class="main-header__tel link" href="tel:89001005050">8-900-100-50-50</a>
+      <button class="main-header__menu-trigger button" aria-label="Открыть меню"></button>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main__inner container">
+      <div class="main__left">
+        <h2 class="main__title">Откроем замок<br>любой сложности от 1000&#8381;</h2>
+      </div>
+      <div class="main__right">
+        <a class="main__call link call-link" href="tel:89001005050">
+          Позвонить<br>
+          <span class="call-link__number">8-900-100-50-50</span>
+        </a>
+        <button class="main__callback button" type="button">Заказать звонок</button>
+      </div>
+    </div>
+  </main>
+
+  <nav class="main-nav">
+    <ul class="main-nav__list">
+      <li class="main-nav__item">
+        <a href="#workTypes" class="main-nav__link link">Что вскрываем</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#advantages" class="main-nav__link link">Наши преимущества</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#workflow" class="main-nav__link link">Порядок работы</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#repair" class="main-nav__link link">Ремонт</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#examples" class="main-nav__link link">Замки</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#articles" class="main-nav__link link">Информация</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#feedback" class="main-nav__link link">Отзывы</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="work-types" id="workTypes">
+    <h2 class="work-types__title visually-hidden">Вскрываем замки квартир, автомобилей, гаражей, сейфов</h2>
+    <ul class="work-types__list container">
+
+      <li class="work-types__item service-card">
+        <figure class="service-card__inner">
+          <picture class="service-card__image-wrapper">
+            <source type="image/avif" srcset="img/work1.avif 1x, img/work1_x2.avif 2x, img/work1_x3.avif 3x">
+            <source type="image/webp" srcset="img/work1.webp 1x, img/work1_x2.webp 2x, img/work1_x3.webp 3x">
+            <img class="service-card__image" src="img/work1.jpg" srcset="img/work1_x2.jpg 3x, img/work1_x2.jpg 2x" alt="Вскрытие автомобилей">
+          </picture>
+          <figcaption class="service-card__desc">
+            Вскрытие автомобилей<br>
+            <span class="service-card__sub-desc">от 1000&#8381;</span>
+          </figcaption>
+        </figure>        
+      </li>
+
+      <li class="work-types__item service-card">
+        <figure class="service-card__inner">
+          <picture class="service-card__image-wrapper">
+            <source type="image/avif" srcset="img/work2_x2.avif 1x, img/work2_x3.avif 2x">
+            <source type="image/webp" srcset="img/work2_x2.webp 1x, img/work2_x3.webp 2x">
+            <img class="service-card__image" src="img/work2_x2.jpg" srcset="img/work2_x2.jpg 2x" alt="Вскрытие дверей">
+          </picture>
+          <figcaption class="service-card__desc">
+            Вскрытие дверей<br>
+            <span class="service-card__sub-desc">от 900&#8381;</span>
+          </figcaption>
+        </figure>        
+      </li>
+
+      <li class="work-types__item service-card">
+        <figure class="service-card__inner">
+          <picture class="service-card__image-wrapper">
+            <source type="image/avif" srcset="img/work3.avif 1x, img/work3_x2.avif 2x, img/work3_x3.avif 3x">
+            <source type="image/webp" srcset="img/work3.webp 1x, img/work3_x2.webp 2x, img/work3_x3.webp 3x">
+            <img class="service-card__image" src="img/work3.jpg" srcset="img/work3_x2.jpg 3x, img/work3_x2.jpg 2x" alt="Вскрытие гаражей">
+          </picture>
+          <figcaption class="service-card__desc">
+            Вскрытие гаражей<br>
+            <span class="service-card__sub-desc">от 1200&#8381;</span>
+          </figcaption>
+        </figure>        
+      </li>
+
+      <li class="work-types__item service-card">
+        <figure class="service-card__inner">
+          <picture class="service-card__image-wrapper">
+            <source type="image/avif" srcset="img/work4.avif 1x, img/work4_x2.avif 2x, img/work4_x3.avif 3x">
+            <source type="image/webp" srcset="img/work4.webp 1x, img/work4_x2.webp 2x, img/work4_x3.webp 3x">
+            <img class="service-card__image" src="img/work4.jpg" srcset="img/work4_x2.jpg 3x, img/work4_x2.jpg 2x" alt="Вскрытие сейфов">
+          </picture>
+          <figcaption class="service-card__desc">
+            Вскрытие сейфов<br> 
+            <span class="service-card__sub-desc">от 1000&#8381;</span>
+          </figcaption>
+        </figure>        
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="advantages" id="advantages">
+    <div class="advantages__inner container">
+      <h2 class="advantages__title section-title">Наши преимущества</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item advantages__item--time">
+          Круглосуточный режим работы без праздников и выходных
+        </li>
+        <li class="advantages__item advantages__item--task">
+          Оперативность обработки заявки
+        </li>
+        <li class="advantages__item advantages__item--tools">
+          Техническая оснащенность
+        </li>
+        <li class="advantages__item advantages__item--fast">
+          Незамедлительный выезд специалиста
+        </li>
+        <li class="advantages__item advantages__item--price">
+          Привлекательные цены, доступные каждому заказчику
+        </li>
+        <li class="advantages__item advantages__item--warranty">
+          Гарантии на все виды услуг
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="workflow" id="workflow">
+    <div class="workflow__inner container">
+      <h2 class="workflow__title section-title">Порядок работы</h2>
+      <ol class="workflow__step-list step-list">
+        <li class="step-list__item">
+          Позвоните по телефону 
+          <a class="step-list__link link" href="tel:89001005050">8-900-100-50-50</a>
+        </li>
+        <li class="step-list__item">В течении 30 минут к вам приезжает специалист</li>
+        <li class="step-list__item">Ваш замок открыт!</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="repair" id="repair">
+    <div class="repair__inner container">
+      <h2 class="repair__title section-title">Замена и установка замков</h2>
+      <ul class="repair__list">
+
+        <li class="repair__item service-card">
+          <figure class="service-card__inner">
+            <picture class="service-card__image-wrapper">
+              <source type="image/avif" srcset="img/repair3.avif 1x, img/repair3_x2.avif 2x, img/repair3_x3.avif 3x">
+              <source type="image/webp" srcset="img/repair3.webp 1x, img/repair3_x2.webp 2x, img/repair3_x3.webp 3x">
+              <img class="service-card__image" src="img/repair3.jpg" srcset="img/repair3_x2.jpg 3x, img/repair3_x2.jpg 2x" alt="Ремонт замка">
+            </picture>
+            <figcaption class="service-card__desc">
+              Ремонт замка<br> 
+              <span class="service-card__sub-desc">от 600&#8381;</span>
+            </figcaption>
+          </figure>        
+        </li>
+
+        <li class="repair__item service-card">
+          <figure class="service-card__inner">
+            <picture class="service-card__image-wrapper">
+              <source type="image/avif" srcset="img/repair2.avif 1x, img/repair2_x2.avif 2x, img/repair2_x3.avif 3x">
+              <source type="image/webp" srcset="img/repair2.webp 1x, img/repair2_x2.webp 2x, img/repair2_x3.webp 3x">
+              <img class="service-card__image" src="img/repair2.jpg" srcset="img/repair2_x2.jpg 3x, img/repair2_x2.jpg 2x" alt="Замена замка">
+            </picture>
+            <figcaption class="service-card__desc">
+              Замена замка<br> 
+              <span class="service-card__sub-desc">от 400&#8381;</span>
+            </figcaption>
+          </figure>        
+        </li>
+
+        <li class="repair__item service-card">
+          <figure class="service-card__inner">
+            <picture class="service-card__image-wrapper">
+              <source type="image/avif" srcset="img/repair.avif 1x, img/repair_x2.avif 2x, img/repair_x3.avif 3x">
+              <source type="image/webp" srcset="img/repair.webp 1x, img/repair_x2.webp 2x, img/repair_x3.webp 3x">
+              <img class="service-card__image" src="img/repair.jpg" srcset="img/repair_x2.jpg 3x, img/repair_x2.jpg 2x" alt="Врезка замка">
+            </picture>
+            <figcaption class="service-card__desc">
+              Врезка замка<br> 
+              <span class="service-card__sub-desc">от 1200&#8381;</span>
+            </figcaption>
+          </figure>        
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <section class="examples" id="examples">
+    <div class="examples__inner container">
+      <h2 class="examples__title section-title">Типы замков которые мы вскрываем</h2>
+      <div class="examples__wrapper">
+        <ul class="examples__list">
+          <li class="examples__item">Квартирные замки</li>
+          <li class="examples__item">Накладные замки</li>
+          <li class="examples__item">Китайские замки</li>
+          <li class="examples__item">Почтовые замки</li>
+          <li class="examples__item">Кодовые замки</li>
+          <li class="examples__item">Сувальдные замки</li>
+          <li class="examples__item">Электронные замки</li>
+          <li class="examples__item">Центральные замки</li>
+          <li class="examples__item">Магнитные замки</li>
+          <li class="examples__item">Целиндровые замки</li>
+          <li class="examples__item">Навесные замки</li>
+          <li class="examples__item">Штифтовые замки</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="articles" id="articles">
+    <div class="articles__inner container">
+      <h2 class="articles__title visually-hidden">Полезная информация</h2>
+      <ul class="articles__list">
+        <li class="articles__item articles-item">
+          <article class="articles-item__inner">
+            <h3 class="articles-item__title section-title">Аварийное вскрытие замков, что нужно знать!</h3>
+            <p class="articles-item__text">
+              Замок должен быть непреодолимой преградой на пути злоумышленников: таково основное предназначение этого устройства. При этом, как и любой механизм, замочная система может выйти из строя, и в такие моменты  владельцы недвижимости становятся уязвимыми. Эксперты рекомендуют заранее позаботиться о том, как предотвратить непредвиденные ситуации: наш номер телефона в телефонной книге (в группе «Экстренные номера») станет настоящим спасением.
+            </p>
+            <p class="articles-item__text">
+              В непредвиденных случаях самостоятельно пытаться исправить проблему с замком считается необдуманным шагом, поскольку это чревато повреждением замочного механизма и самой двери. Обращение к специалистам компании, долгие годы осуществляющей деятельность на рынке поможет оперативно устранить проблему, сохранить безопасность имущества и граждан.
+            </p>
+            <p class="articles-item__text">
+              Мы профессионально установим замки любой сложности, организуем вскрытие механизмов, произведем ремонт или замену деталей.
+              У нас работают опытные мастера, которые выезжают на объект с полным комплектом инструментов и оборудования. Для нас нет невыполнимых задач — мы оперативно находим решение самых непростых проблем, связанных с неисправностью замковых механизмов!
+            </p>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="feedback" id="feedback">
+    <div class="feedback__inner container">
+      <h2 class="feedback__title section-title">Отзывы</h2>
+      <ul class="feedback__list">
+        <li class="feedback__item feedback-item">
+          <section class="feedback-item__inner">
+            <header class="feedback-item__header">
+              <h3 class="feedback-item__title">Сергей</h3>
+            </header>
+            <p class="feedback-item__text">
+              Я решил обратиться за помощью к профессиональным специалистам по вскрытию замков, и не пожалел об этом. Сотрудники службы были очень вежливыми и отзывчивыми. Они оперативно приехали ко мне домой и начали работу.
+              Что меня приятно удивило, так это профессионализм и опытность специалистов. Они быстро определили наиболее эффективный способ вскрытия замка, не нанеся при этом никаких повреждений. Вскрытие замка прошло гладко и без проблем.
+            </p>
+          </section>
+        </li>
+
+        <li class="feedback__item feedback-item">
+          <section class="feedback-item__inner">
+            <header class="feedback-item__header">
+              <h3 class="feedback-item__title">Вадим</h3>
+            </header>
+            <p class="feedback-item__text">
+              Услуги круглосуточно, что очень удобно, особенно если случай происходит ночью или в выходные дни. Это дает мне уверенность, что я всегда смогу получить помощь в случае необходимости.
+              Кроме того, специалисты были очень вежливыми и профессиональными. Они объяснили мне процесс вскрытия и ответили на все мои вопросы. Я чувствовал себя в надежных руках и уверенно отдал свой автомобиль на их обработку.
+            </p>
+          </section>
+        </li>
+        
+        <li class="feedback__item feedback-item">
+          <section class="feedback-item__inner">
+            <header class="feedback-item__header">
+              <h3 class="feedback-item__title">Анна</h3>
+            </header>
+            <p class="feedback-item__text">
+              Я была очень впечатлена профессионализмом и внимательностью специалистов службы. Они быстро приехали на место и оперативно решили проблему с моим замком. Кроме того, они работали аккуратно и не повредили мою машину.
+              В общем, я очень довольна услугами службы по аварийному вскрытию автомобилей. Они предоставили мне профессиональную помощь в критической ситуации, и я рекомендую обратиться к ним, если у вас возникнут проблемы с замками автомобиля.
+            </p>
+          </section>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="main-footer__inner container">
+      <div class="main-footer__item">
+        <a class="main-footer__link link" href="tel:89001005050">8-900-100-50-50</a>
+      </div>
+      <div class="main-footer__item">
+        <a class="main-footer__link link" href="">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/app.min.js"></script>
+</body>
+</html>
