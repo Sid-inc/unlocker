@@ -308,7 +308,16 @@ template {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-image: url(../img/background.jpg);
+  background-image: -webkit-image-set(url("../img/background_x3.webp") 3x, url("../img/background_x2.webp") 2x, url("../img/background.webp") 1x);
+  background-image: image-set(url("../img/background_x3.webp") 3x, url("../img/background_x2.webp") 2x, url("../img/background.webp") 1x);
   z-index: -2
+}
+@supports ((background:-webkit-image-set("../img/background.jpg" type("image/jpg"))) or (background:image-set("../img/background.jpg" type("image/jpg")))) {
+  .main-header::before {
+    background-image: -webkit-image-set(url("../img/background_x3.avif") type("image/avif") 3x, url("../img/background_x2.avif") type("image/avif") 2x, url("../img/background.avif") type("image/avif") 1x, url("../img/background_x3.webp") type("image/webp") 3x, url("../img/background_x2.webp") type("image/webp") 2x, url("../img/background.webp") type("image/webp") 1x, url("../img/background_x3.jpg") 3x, url("../img/background_x2.jpg") 2x, url("../img/background.jpg") 1x);
+    background-image: image-set(url("../img/background_x3.avif") type("image/avif") 3x, url("../img/background_x2.avif") type("image/avif") 2x, url("../img/background.avif") type("image/avif") 1x, url("../img/background_x3.webp") type("image/webp") 3x, url("../img/background_x2.webp") type("image/webp") 2x, url("../img/background.webp") type("image/webp") 1x, url("../img/background_x3.jpg") 3x, url("../img/background_x2.jpg") 2x, url("../img/background.jpg") 1x)
+  }
 }
 @media screen and (max-width:396px) {
   .main-header {
@@ -824,12 +833,19 @@ template {
 }
 .advantages {
   position: relative;
-  background-image: -webkit-image-set(url("../img/antique_x3.avif") type("image/avif") 3x, url("../img/antique_x2.avif") type("image/avif") 2x, url("../img/antique.avif") type("image/avif") 1x, url("../img/antique_x3.webp") type("image/webp") 3x, url("../img/antique_x2.webp") type("image/webp") 2x, url("../img/antique.webp") type("image/webp") 1x, url("../img/antique_x3.jpg") 3x, url("../img/antique_x2.jpg") 2x, url("../img/antique.jpg") 1x);
-  background-image: image-set(url("../img/antique_x3.avif") type("image/avif") 3x, url("../img/antique_x2.avif") type("image/avif") 2x, url("../img/antique.avif") type("image/avif") 1x, url("../img/antique_x3.webp") type("image/webp") 3x, url("../img/antique_x2.webp") type("image/webp") 2x, url("../img/antique.webp") type("image/webp") 1x, url("../img/antique_x3.jpg") 3x, url("../img/antique_x2.jpg") 2x, url("../img/antique.jpg") 1x);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
+  background-image: url(../img/antique.jpg);
+  background-image: -webkit-image-set(url("../img/antique_x3.webp") 3x, url("../img/antique_x2.webp") 2x, url("../img/antique.webp") 1x);
+  background-image: image-set(url("../img/antique_x3.webp") 3x, url("../img/antique_x2.webp") 2x, url("../img/antique.webp") 1x)
+}
+@supports ((background:-webkit-image-set("../img/antique.jpg" type("image/jpg"))) or (background:image-set("../img/antique.jpg" type("image/jpg")))) {
+  .advantages {
+    background-image: -webkit-image-set(url("../img/antique_x3.avif") type("image/avif") 3x, url("../img/antique_x2.avif") type("image/avif") 2x, url("../img/antique.avif") type("image/avif") 1x, url("../img/antique_x3.webp") type("image/webp") 3x, url("../img/antique_x2.webp") type("image/webp") 2x, url("../img/antique.webp") type("image/webp") 1x, url("../img/antique_x3.jpg") 3x, url("../img/antique_x2.jpg") 2x, url("../img/antique.jpg") 1x);
+    background-image: image-set(url("../img/antique_x3.avif") type("image/avif") 3x, url("../img/antique_x2.avif") type("image/avif") 2x, url("../img/antique.avif") type("image/avif") 1x, url("../img/antique_x3.webp") type("image/webp") 3x, url("../img/antique_x2.webp") type("image/webp") 2x, url("../img/antique.webp") type("image/webp") 1x, url("../img/antique_x3.jpg") 3x, url("../img/antique_x2.jpg") 2x, url("../img/antique.jpg") 1x)
+  }
 }
 .advantages::before {
   content: '';
@@ -1185,11 +1201,18 @@ template {
   padding-top: 40px;
   padding-left: 60px;
   padding-right: 60px;
-  background-image: -webkit-image-set(url("../img/examples_x3.avif") type("image/avif") 3x, url("../img/examples_x2.avif") type("image/avif") 2x, url("../img/examples.avif") type("image/avif") 1x, url("../img/examples_x3.webp") type("image/webp") 3x, url("../img/examples_x2.webp") type("image/webp") 2x, url("../img/examples.webp") type("image/webp") 1x, url("../img/examples_x3.jpg") 3x, url("../img/examples_x2.jpg") 2x, url("../img/examples.jpg") 1x);
-  background-image: image-set(url("../img/examples_x3.avif") type("image/avif") 3x, url("../img/examples_x2.avif") type("image/avif") 2x, url("../img/examples.avif") type("image/avif") 1x, url("../img/examples_x3.webp") type("image/webp") 3x, url("../img/examples_x2.webp") type("image/webp") 2x, url("../img/examples.webp") type("image/webp") 1x, url("../img/examples_x3.jpg") 3x, url("../img/examples_x2.jpg") 2x, url("../img/examples.jpg") 1x);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
+  background-image: url(../img/examples.jpg);
+  background-image: -webkit-image-set(url("../img/examples_x3.webp") 3x, url("../img/examples_x2.webp") 2x, url("../img/examples.webp") 1x);
+  background-image: image-set(url("../img/examples_x3.webp") 3x, url("../img/examples_x2.webp") 2x, url("../img/examples.webp") 1x)
+}
+@supports ((background:-webkit-image-set("../img/examples.jpg" type("image/jpg"))) or (background:image-set("../img/examples.jpg" type("image/jpg")))) {
+  .examples {
+    background-image: -webkit-image-set(url("../img/examples_x3.avif") type("image/avif") 3x, url("../img/examples_x2.avif") type("image/avif") 2x, url("../img/examples.avif") type("image/avif") 1x, url("../img/examples_x3.webp") type("image/webp") 3x, url("../img/examples_x2.webp") type("image/webp") 2x, url("../img/examples.webp") type("image/webp") 1x, url("../img/examples_x3.jpg") 3x, url("../img/examples_x2.jpg") 2x, url("../img/examples.jpg") 1x);
+    background-image: image-set(url("../img/examples_x3.avif") type("image/avif") 3x, url("../img/examples_x2.avif") type("image/avif") 2x, url("../img/examples.avif") type("image/avif") 1x, url("../img/examples_x3.webp") type("image/webp") 3x, url("../img/examples_x2.webp") type("image/webp") 2x, url("../img/examples.webp") type("image/webp") 1x, url("../img/examples_x3.jpg") 3x, url("../img/examples_x2.jpg") 2x, url("../img/examples.jpg") 1x)
+  }
 }
 .examples::before {
   content: '';

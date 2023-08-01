@@ -1,6 +1,18 @@
 .advantages {
   position: relative;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: url("../img/antique.jpg");
   background-image: image-set(
+    url('../img/antique_x3.webp') 3x,
+    url('../img/antique_x2.webp') 2x,
+    url('../img/antique.webp') 1x,
+  );
+
+  @supports (background: image-set("../img/antique.jpg" type("image/jpg"))){
+    background-image: image-set(
       url('../img/antique_x3.avif') type('image/avif') 3x,
       url('../img/antique_x2.avif') type('image/avif') 2x,
       url('../img/antique.avif') type('image/avif') 1x,
@@ -11,10 +23,7 @@
       url('../img/antique_x2.jpg') 2x,
       url('../img/antique.jpg') 1x,
     );
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  }
 
   &::before {
     content: '';
