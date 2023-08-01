@@ -5,15 +5,15 @@
   padding-left: 60px;
   padding-right: 60px;
   background-image: image-set(
-      url('../../img/examples_x3.avif') type('image/avif') 3x,
-      url('../../img/examples_x2.avif') type('image/avif') 2x,
-      url('../../imgexamplese.avif') type('image/avif') 1x,
-      url('../../img/examples_x3.webp') type('image/webp') 3x,
-      url('../../img/examples_x2.webp') type('image/webp') 2x,
-      url('../../img/examples.webp') type('image/webp') 1x,
-      url('../../img/examples_x3.jpg') 3x,
-      url('../../img/examples_x2.jpg') 2x,
-      url('../../img/examples.jpg') 1x,
+      url('../img/examples_x3.avif') type('image/avif') 3x,
+      url('../img/examples_x2.avif') type('image/avif') 2x,
+      url('../img/examples.avif') type('image/avif') 1x,
+      url('../img/examples_x3.webp') type('image/webp') 3x,
+      url('../img/examples_x2.webp') type('image/webp') 2x,
+      url('../img/examples.webp') type('image/webp') 1x,
+      url('../img/examples_x3.jpg') 3x,
+      url('../img/examples_x2.jpg') 2x,
+      url('../img/examples.jpg') 1x,
     );
   background-size: cover;
   background-position: center;

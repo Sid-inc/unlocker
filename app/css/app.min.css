@@ -303,8 +303,8 @@ template {
   z-index: -1
 }
 .main-header::before {
-  background-image: -webkit-image-set(url("../../img/background_x3.avif") type("image/avif") 3x, url("../../img/background_x2.avif") type("image/avif") 2x, url("../../img/background.avif") type("image/avif") 1x, url("../../img/background_x3.webp") type("image/webp") 3x, url("../../img/background_x2.webp") type("image/webp") 2x, url("../../img/background.webp") type("image/webp") 1x, url("../../img/background_x3.jpg") 3x, url("../../img/background_x2.jpg") 2x, url("../../img/background.jpg") 1x);
-  background-image: image-set(url("../../img/background_x3.avif") type("image/avif") 3x, url("../../img/background_x2.avif") type("image/avif") 2x, url("../../img/background.avif") type("image/avif") 1x, url("../../img/background_x3.webp") type("image/webp") 3x, url("../../img/background_x2.webp") type("image/webp") 2x, url("../../img/background.webp") type("image/webp") 1x, url("../../img/background_x3.jpg") 3x, url("../../img/background_x2.jpg") 2x, url("../../img/background.jpg") 1x);
+  background-image: -webkit-image-set(url("../img/background_x3.avif") type("image/avif") 3x, url("../img/background_x2.avif") type("image/avif") 2x, url("../img/background.avif") type("image/avif") 1x, url("../img/background_x3.webp") type("image/webp") 3x, url("../img/background_x2.webp") type("image/webp") 2x, url("../img/background.webp") type("image/webp") 1x, url("../img/background_x3.jpg") 3x, url("../img/background_x2.jpg") 2x, url("../img/background.jpg") 1x);
+  background-image: image-set(url("../img/background_x3.avif") type("image/avif") 3x, url("../img/background_x2.avif") type("image/avif") 2x, url("../img/background.avif") type("image/avif") 1x, url("../img/background_x3.webp") type("image/webp") 3x, url("../img/background_x2.webp") type("image/webp") 2x, url("../img/background.webp") type("image/webp") 1x, url("../img/background_x3.jpg") 3x, url("../img/background_x2.jpg") 2x, url("../img/background.jpg") 1x);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -349,7 +349,7 @@ template {
   transform: scale(.9)
 }
 .main-header--fixed .main-header__link {
-  background-image: url(../../img/icons/lock--white.png);
+  background-image: url(../img/icons/lock--white.png);
   color: var(--text-accent)
 }
 .main-header__inner {
@@ -412,7 +412,7 @@ template {
   padding-left: calc(28px + 16px);
   white-space: nowrap;
   background-repeat: no-repeat;
-  background-image: url(../../img/icons/call_FILL0_wght400_GRAD0_opsz48.svg);
+  background-image: url(../img/icons/call_FILL0_wght400_GRAD0_opsz48.svg);
   background-size: 18px 18px;
   background-position: left 8px center;
   -webkit-transition: background-color .2s ease-in-out;
@@ -434,7 +434,7 @@ template {
   display: block;
   color: var(--text);
   padding-left: 48px;
-  background-image: url(../../img/icons/lock.png);
+  background-image: url(../img/icons/lock.png);
   background-position: left center;
   background-size: 40px 40px;
   background-repeat: no-repeat;
@@ -824,8 +824,8 @@ template {
 }
 .advantages {
   position: relative;
-  background-image: -webkit-image-set(url("../../img/antique_x3.avif") type("image/avif") 3x, url("../../img/antique_x2.avif") type("image/avif") 2x, url("../../img/antique.avif") type("image/avif") 1x, url("../../img/antique_x3.webp") type("image/webp") 3x, url("../../img/antique_x2.webp") type("image/webp") 2x, url("../../img/antique.webp") type("image/webp") 1x, url("../../img/antique_x3.jpg") 3x, url("../../img/antique_x2.jpg") 2x, url("../../img/antique.jpg") 1x);
-  background-image: image-set(url("../../img/antique_x3.avif") type("image/avif") 3x, url("../../img/antique_x2.avif") type("image/avif") 2x, url("../../img/antique.avif") type("image/avif") 1x, url("../../img/antique_x3.webp") type("image/webp") 3x, url("../../img/antique_x2.webp") type("image/webp") 2x, url("../../img/antique.webp") type("image/webp") 1x, url("../../img/antique_x3.jpg") 3x, url("../../img/antique_x2.jpg") 2x, url("../../img/antique.jpg") 1x);
+  background-image: -webkit-image-set(url("../img/antique_x3.avif") type("image/avif") 3x, url("../img/antique_x2.avif") type("image/avif") 2x, url("../img/antique.avif") type("image/avif") 1x, url("../img/antique_x3.webp") type("image/webp") 3x, url("../img/antique_x2.webp") type("image/webp") 2x, url("../img/antique.webp") type("image/webp") 1x, url("../img/antique_x3.jpg") 3x, url("../img/antique_x2.jpg") 2x, url("../img/antique.jpg") 1x);
+  background-image: image-set(url("../img/antique_x3.avif") type("image/avif") 3x, url("../img/antique_x2.avif") type("image/avif") 2x, url("../img/antique.avif") type("image/avif") 1x, url("../img/antique_x3.webp") type("image/webp") 3x, url("../img/antique_x2.webp") type("image/webp") 2x, url("../img/antique.webp") type("image/webp") 1x, url("../img/antique_x3.jpg") 3x, url("../img/antique_x2.jpg") 2x, url("../img/antique.jpg") 1x);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -926,22 +926,22 @@ template {
   }
 }
 .advantages__item--time::before {
-  background-image: url(../../img/icons/time.svg)
+  background-image: url(../img/icons/time.svg)
 }
 .advantages__item--task::before {
-  background-image: url(../../img/icons/fast-task.svg)
+  background-image: url(../img/icons/fast-task.svg)
 }
 .advantages__item--tools::before {
-  background-image: url(../../img/icons/tools.svg)
+  background-image: url(../img/icons/tools.svg)
 }
 .advantages__item--fast::before {
-  background-image: url(../../img/icons/fast.svg)
+  background-image: url(../img/icons/fast.svg)
 }
 .advantages__item--price::before {
-  background-image: url(../../img/icons/payments.svg)
+  background-image: url(../img/icons/payments.svg)
 }
 .advantages__item--warranty::before {
-  background-image: url(../../img/icons/warranty.svg)
+  background-image: url(../img/icons/warranty.svg)
 }
 .workflow__inner {
   height: 700px;
@@ -1046,7 +1046,7 @@ template {
   bottom: -48px;
   width: 100%;
   height: 320px;
-  background-image: url(../../img/icons/arrow.svg);
+  background-image: url(../img/icons/arrow.svg);
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat
@@ -1185,8 +1185,8 @@ template {
   padding-top: 40px;
   padding-left: 60px;
   padding-right: 60px;
-  background-image: -webkit-image-set(url("../../img/examples_x3.avif") type("image/avif") 3x, url("../../img/examples_x2.avif") type("image/avif") 2x, url("../../imgexamplese.avif") type("image/avif") 1x, url("../../img/examples_x3.webp") type("image/webp") 3x, url("../../img/examples_x2.webp") type("image/webp") 2x, url("../../img/examples.webp") type("image/webp") 1x, url("../../img/examples_x3.jpg") 3x, url("../../img/examples_x2.jpg") 2x, url("../../img/examples.jpg") 1x);
-  background-image: image-set(url("../../img/examples_x3.avif") type("image/avif") 3x, url("../../img/examples_x2.avif") type("image/avif") 2x, url("../../imgexamplese.avif") type("image/avif") 1x, url("../../img/examples_x3.webp") type("image/webp") 3x, url("../../img/examples_x2.webp") type("image/webp") 2x, url("../../img/examples.webp") type("image/webp") 1x, url("../../img/examples_x3.jpg") 3x, url("../../img/examples_x2.jpg") 2x, url("../../img/examples.jpg") 1x);
+  background-image: -webkit-image-set(url("../img/examples_x3.avif") type("image/avif") 3x, url("../img/examples_x2.avif") type("image/avif") 2x, url("../img/examples.avif") type("image/avif") 1x, url("../img/examples_x3.webp") type("image/webp") 3x, url("../img/examples_x2.webp") type("image/webp") 2x, url("../img/examples.webp") type("image/webp") 1x, url("../img/examples_x3.jpg") 3x, url("../img/examples_x2.jpg") 2x, url("../img/examples.jpg") 1x);
+  background-image: image-set(url("../img/examples_x3.avif") type("image/avif") 3x, url("../img/examples_x2.avif") type("image/avif") 2x, url("../img/examples.avif") type("image/avif") 1x, url("../img/examples_x3.webp") type("image/webp") 3x, url("../img/examples_x2.webp") type("image/webp") 2x, url("../img/examples.webp") type("image/webp") 1x, url("../img/examples_x3.jpg") 3x, url("../img/examples_x2.jpg") 2x, url("../img/examples.jpg") 1x);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat
@@ -1405,7 +1405,7 @@ template {
   left: 2px;
   width: 32px;
   height: 32px;
-  background-image: url(../../img/icons/person.svg);
+  background-image: url(../img/icons/person.svg);
   background-size: cover;
   background-repeat: no-repeat;
   opacity: .4

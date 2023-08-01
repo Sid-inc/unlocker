@@ -1,15 +1,15 @@
 .advantages {
   position: relative;
   background-image: image-set(
-      url('../../img/antique_x3.avif') type('image/avif') 3x,
-      url('../../img/antique_x2.avif') type('image/avif') 2x,
-      url('../../img/antique.avif') type('image/avif') 1x,
-      url('../../img/antique_x3.webp') type('image/webp') 3x,
-      url('../../img/antique_x2.webp') type('image/webp') 2x,
-      url('../../img/antique.webp') type('image/webp') 1x,
-      url('../../img/antique_x3.jpg') 3x,
-      url('../../img/antique_x2.jpg') 2x,
-      url('../../img/antique.jpg') 1x,
+      url('../img/antique_x3.avif') type('image/avif') 3x,
+      url('../img/antique_x2.avif') type('image/avif') 2x,
+      url('../img/antique.avif') type('image/avif') 1x,
+      url('../img/antique_x3.webp') type('image/webp') 3x,
+      url('../img/antique_x2.webp') type('image/webp') 2x,
+      url('../img/antique.webp') type('image/webp') 1x,
+      url('../img/antique_x3.jpg') 3x,
+      url('../img/antique_x2.jpg') 2x,
+      url('../img/antique.jpg') 1x,
     );
   background-size: cover;
   background-position: center;
@@ -113,36 +113,36 @@
 
 .advantages__item--time {
   &::before {
-    background-image: url("../../img/icons/time.svg");
+    background-image: url("../img/icons/time.svg");
   }
 }
 
 .advantages__item--task {
   &::before {
-    background-image: url("../../img/icons/fast-task.svg");
+    background-image: url("../img/icons/fast-task.svg");
   }
 }
 
 .advantages__item--tools {
   &::before {
-    background-image: url("../../img/icons/tools.svg");
+    background-image: url("../img/icons/tools.svg");
   }
 }
 
 .advantages__item--fast {
   &::before {
-    background-image: url("../../img/icons/fast.svg");
+    background-image: url("../img/icons/fast.svg");
   }
 }
 
 .advantages__item--price {
   &::before {
-    background-image: url("../../img/icons/payments.svg");
+    background-image: url("../img/icons/payments.svg");
   }
 }
 
 .advantages__item--warranty {
   &::before {
-    background-image: url("../../img/icons/warranty.svg");
+    background-image: url("../img/icons/warranty.svg");
   }
 }
