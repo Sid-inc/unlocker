@@ -187,6 +187,7 @@ template {
   --accent-bg: #1D252D;
   --feedback-bg: rgba(255, 120, 0, 0.1);
   --footer-bg: #24282C;
+  --mobile-menu-bg: rgba(29,37,45,.98);
   --text: rgb(29, 37, 45);
   --text-accent: rgb(255, 255, 255);
   --outline: #462000
@@ -194,7 +195,9 @@ template {
 .link {
   text-decoration: none;
   outline-color: var(--outline);
-  outline-offset: 4px
+  outline-offset: 4px;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation
 }
 .button {
   display: -webkit-inline-box;
@@ -214,6 +217,8 @@ template {
   transition: background-color .2s ease;
   outline-color: var(--outline);
   outline-offset: 4px;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
   cursor: pointer
 }
 .section-title {
@@ -496,6 +501,9 @@ template {
     border-radius: 4px
   }
 }
+.main-header__menu-trigger--opened {
+  background-color: var(--mobile-menu-bg)
+}
 .main-header__menu-trigger--opened::after,
 .main-header__menu-trigger--opened::before {
   top: 50%
@@ -692,11 +700,48 @@ template {
   background-color: var(--primary);
   position: sticky;
   top: 66px;
-  z-index: 9
+  z-index: 9;
+  -webkit-transition: height .4s;
+  transition: height .4s
 }
 @media screen and (max-width:992px) {
   .main-nav {
-    display: none
+    font-size: 0;
+    background-color: var(--mobile-menu-bg);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 0;
+    z-index: 10;
+    overflow: hidden
+  }
+  .main-nav .main-nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 20px
+  }
+  .main-nav .main-nav__item {
+    height: auto;
+    width: auto
+  }
+  .main-nav .main-nav__link {
+    font-size: 0;
+    opacity: 0;
+    -webkit-transition: font-size .4s,opacity .4s;
+    transition: font-size .4s,opacity .4s
+  }
+  .main-nav.main-nav--opened {
+    height: 100vh
+  }
+  .main-nav.main-nav--opened .main-nav__link {
+    font-size: 14px;
+    opacity: 1
   }
 }
 .main-nav__list {

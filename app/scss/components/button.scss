@@ -9,5 +9,6 @@
   transition: background-color .2s ease;
   outline-color: var(--outline);
   outline-offset: 4px;
+  touch-action: manipulation;
   cursor: pointer;
 }

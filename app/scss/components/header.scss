@@ -213,6 +213,8 @@
 }
 
 .main-header__menu-trigger--opened {
+  background-color: var(--mobile-menu-bg);
+  
   &::before,
   &::after {
     top: 50%;
